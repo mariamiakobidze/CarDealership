@@ -41,7 +41,7 @@ public partial class carDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=(localdb)\\MSSQLLocalDB;Database=CarDealershipDB;Trusted_Connection=True;TrustServerCertificate=True;",
+            "Server=localhost\\MSSQLSERVER01;Database=CarDealershipDB;Trusted_Connection=True;TrustServerCertificate=True;",
             options => options.EnableRetryOnFailure());
     }
 
